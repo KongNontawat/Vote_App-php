@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600&display=swap');
+:root {
+	--primary_green: #26ae60;
+	--bg: #f6f0da;
+	--dark_grey: #a1a1a1;
+	--light_grey: #dddddd;
+}
+
+
+::before , ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    font-family: 'Kanit', sans-serif;
+    background-color: var(--bg);
+    overflow: hidden;
+}
+
+.brands {
+	margin-top: 70px;
+}
+
+.brands .vote_icon {
+	width: 95px;
+}
+
+.brands .logo {
+	width: 170px;
+}
+
+.result img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.reward {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.reward img{
+    position: absolute;
+    bottom: -30%;
+    width: 50px;
+}

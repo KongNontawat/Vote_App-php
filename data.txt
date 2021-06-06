@@ -1,0 +1,32 @@
+| id | name |  path_img  |  vote_score |
+===============================
+| 1    kong     kong.jpg            0
+| 2    jack      12498.jpg          2
+| 3    guy       9284275.png     5
+| 4    fiw         swif.jpg            1
+
+--โหวด
+UPDATE User SET vote_score = vote_score + 1
+WHERE id = :id;
+
+--แสดงผู้มีผลโหวดเยอะทีสุด
+SELECT name, path_img, MAX(vote_score) AS 'Vote Score'
+FROM User
+
+สมัครใช้งาน
+INSERT INTO User (name, path_img) 
+VALUES (:name, :path_img);
+
+CREATE TABLE User (
+id INT(11) PRIMARY KEY  AUTO_INCREMENT,
+name VARCHAR(255),
+path_img TEXT,
+vote_score INTEGER DEFAULT 0,
+status BIT DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+Code Color 
+primary_green #26AE60
+bg #FFD9B3
+dark_grey #949494
+light_grey #DDDDDD

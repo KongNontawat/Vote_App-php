@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600&display=swap");
+:root {
+	--primary_green: #26ae60;
+	--bg: #ffd9b3;
+	--dark_grey: #a1a1a1;
+	--light_grey: #dddddd;
+}
+
+::before,
+::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: "Kanit", sans-serif;
+}
+
+a {
+	text-decoration: none!important;
+}
+
+.header_top {
+	width: 100%;
+	height: 60px;
+	background: var(--primary_green);
+}
+
+.header_top .mycontainer {
+	width: 100%;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header_top .logo img {
+	margin-bottom: 5px;
+}
+.header_top .profile {
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	margin-top: 4px;
+}
+.header_top .profile img {
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.row .col-4 .user h6{
+	color: #333;
+}
+.row .col-4 .user img {
+	width: 75px;
+	height: 75px;
+	object-fit: cover;
+	border-radius: 50%;
+}

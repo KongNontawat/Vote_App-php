@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600&display=swap');
+
+
+:root {
+	--primary_green: #26ae60;
+	--bg: #ffd9b3;
+	--dark_grey: #a1a1a1;
+	--light_grey: #dddddd;
+}
+
+body {
+    width: 100%;
+    font-family: 'Kanit', sans-serif;
+}
+
+.brands {
+	margin-top: 70px;
+}
+
+.brands .vote_icon {
+	width: 95px;
+}
+
+.brands .logo {
+	width: 170px;
+}
+
+form .file-upload {
+	height: 120px;
+	width: 120px;
+	border-radius: 100px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background-image: linear-gradient(
+		to bottom,
+		var(--light_grey) 50%,
+		#ffffff 50%
+	);
+	background-size: 100% 200%;
+	transition: all 1s;
+	color: var(--light_grey);
+	font-size: 100px;
+	cursor: pointer;
+}
+
+form .file-upload input[type="file"] {
+	height: 120px;
+	width: 120px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 10000;
+	cursor: pointer;
+}
+
+form .fa-camera {
+	/* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+	font-size: 48px;
+	color: var(--dark_grey);
+}
+
+form .img_profile {
+	width: 100%;
+	object-fit: cover;
+}
+
+form .input_name input {
+	width: 85%;
+	max-width: 500px;
+	height: 45px;
+}
+
+form .input_name input::placeholder {
+	color: var(--dark_grey);
+}
+
+form .input_name button {
+	width: 85%;
+	max-width: 500px;
+	height: 45px;
+	background-color: var(--primary_green);
+}
