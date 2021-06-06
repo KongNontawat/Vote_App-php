@@ -25,7 +25,12 @@ vote_score INTEGER DEFAULT 0,
 status BIT DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-Code Color 
+CCode Color 
+primary_green #26AE60
+bg #FFD9B3
+dark_grey #949494
+light_grey #DDDDDD
+ode Color 
 primary_green #26AE60
 bg #FFD9B3
 dark_grey #949494
